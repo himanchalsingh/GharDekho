@@ -17,6 +17,7 @@ app.use("/api/auth", authRouter);
 app.use("/api/test", testRouter);
 app.use("/api/chats", chatRouter);
 app.use("/api/messages", messageRouter);
-app.listen(8800, () => {
+const PORT = process.env.PORT || 8800;
+app.listen(PORT, () => {
   console.log("server is running");
 });
