@@ -7,7 +7,7 @@ config();
 // Setup CORS and other options for Socket.io
 const io = new Server({
   cors: {
-    origin: "https://ghardekho-1-front.onrender.com/", // Adjust this for your frontend URL
+    origin: "http://localhost:5173", // Adjust this for your frontend URL
   },
 });
 
