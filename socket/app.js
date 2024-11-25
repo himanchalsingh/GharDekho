@@ -7,12 +7,12 @@ config();
 // Setup CORS and other options for Socket.io
 const io = new Server({
   cors: {
-    origin: "https://ghardekho-1-91if.onrender.com/", // Adjust this for your frontend URL
+    origin: "http://localhost:5173", // Adjust this for your frontend URL
   },
 });
 
 // Use process.env.PORT with a fallback to 4000 for local development
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 5550;
 
 let onlineUser = []; // Store all connected users
 
